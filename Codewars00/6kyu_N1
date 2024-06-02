@@ -1,0 +1,7 @@
+# Find the Mine!
+
+def mine_location(field):
+    for list_index in range(len(field)):
+        for element_index in range(len(field[list_index])):
+            if field[list_index][element_index] == 1:
+                return [list_index, element_index] 

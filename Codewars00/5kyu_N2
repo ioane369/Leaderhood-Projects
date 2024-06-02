@@ -1,0 +1,16 @@
+# The Hashtag Generator
+
+def generate_hashtag(s):
+    if not s:
+        return False
+    
+    result = "#"
+    s = s.strip()
+
+    for word in s.split():
+        result += word.capitalize()
+        
+    if len(result) > 140:
+        return False
+    
+    return result
